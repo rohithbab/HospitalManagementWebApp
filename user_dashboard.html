@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile">
+                <h2>Welcome, <span id="userName">User</span></h2>
+            </div>
+            <nav class="sidebar-nav">
+                <button id="userDetailsBtn">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-6 2.69-6 6v1h12v-1c0-3.31-2.69-6-6-6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 12c-4.41 0-8 3.59-8 8v1h16v-1c0-4.41-3.59-8-8-8z"/></svg>
+                    User Details
+                </button>
+                <button id="prevAppointmentBtn">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 6h-3v12h3v2h-8v-2h3v-8h-4v8h3v2h-8v-2h3v-12h-3v-2h8v2h3v8z"/></svg>
+                    Previous Appointments
+                </button>
+                <button id="newAppointmentBtn">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 6h-2v12h2v2h-6v-2h2v-12h-2v2h-2v-2h-4v2h-2v-2h-2v12h2v2h-2v2h2v2h12v-2h2v-2h-2v-2h2v-2h2v-2h-2v-2z"/></svg>
+                    New Appointment
+                </button>
+                <button id="medicalInsurancesBtn">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2h-2v4h2v10h2v-10h2v2h2v-2h2v2h2v-2h2v4h2v-10h-2v-2z"/></svg>
+                    Medical Insurances
+                </button>
+                <button id="medicalReportBtn">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c-2.21 0-4 1.79-4 4v1h-2v2h2v12h12v-12h2v-2h-2v-1c0-2.21-1.79-4-4-4zm-2 2h4v1h-4v-1zm4 3v2h-4v-2h4zm-4 3h4v10h-4v-10z"/></svg>
+                    Medical Report
+                </button>
+                <button id="logoutBtn">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 16v-2h4v2h4v-6h-4v2h-4v-2h-4v6h4zm8-14h-12c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm-12 2h12v14h-12v-14z"/></svg>
+                    Logout
+                </button>
+            </nav>
+        </aside>
+        <main class="content">
+            <div id="contentArea">
+                <h1>Welcome to Your Dashboard</h1>
+                <p>Select an option from the sidebar to view details.</p>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

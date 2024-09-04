@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Dashboard - Sri Ramachandraa Hospital</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="left-frame">
+            <div class="welcome-section">
+                <h2>Welcome, <span id="doctorName">Doctor</span></h2>
+            </div>
+            <div class="menu-section">
+                <button class="menu-btn" onclick="loadPatientDetails()">Patient Details</button>
+                <button class="menu-btn" onclick="loadInventoryManagement()">Inventory Management</button>
+                <button class="menu-btn" onclick="loadLabBooking()">Lab Booking</button>
+                <button class="menu-btn" onclick="logout()">LOGOUT</button>
+            </div>
+        </div>
+        <div class="right-frame">
+            <div class="doctor-image-container">
+                <img id="doctorImage" src="assets/default-doctor.png" alt="Doctor Image">
+            </div>
+            <div class="doctor-details">
+                <p>Name: <span id="docName">Dr. Name</span></p>
+                <p>Qualification: <span id="docQualification">MBBS</span></p>
+                <p>Specialist: <span id="docSpecialist">General</span></p>
+                <p>Experience: <span id="docExperience">10 years</span></p>
+                <p>Phone: <span id="docPhone">123-456-7890</span></p>
+                <p>Email: <span id="docEmail">doctor@example.com</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
